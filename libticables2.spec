@@ -30,7 +30,7 @@ This package contains the files necessary to develop applications using the
 Summary: Development files for %{name}
 Group: System/Libraries
 
-%description -n %develname
+%description -n %libname
 This package contains the files necessary to develop applications using the
 %{name} library.
 
