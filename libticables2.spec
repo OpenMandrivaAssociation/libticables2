@@ -1,4 +1,4 @@
-%define major 2
+%define major 5
 %define libname %mklibname ticables2 %{major}
 %define develname %mklibname ticables2 -d
 
@@ -47,8 +47,8 @@ autoreconf -i -f
 rm -f %buildroot%{_libdir}/libticables2.la
 
 
-mkdir -p $RPM_BUILD_ROOT/lib/udev/rules.d
-cat >$RPM_BUILD_ROOT/lib/udev/rules.d/69-libticables.rules <<EOF
+mkdir -p %buildroot/lib/udev/rules.d
+cat >%buildroot/lib/udev/rules.d/69-libticables.rules <<EOF
 # This file was installed by the libticables2 Fedora package.
 
 ACTION!="add", GOTO="libticables_end"
@@ -74,7 +74,7 @@ EOF
 
 
 %files -n %libname
-%{_libdir}/libticables2.so.*
+%{_libdir}/libticables2.so.%{major}*
 /lib/udev/rules.d/69-libticables.rules
 
 %files -n %develname
