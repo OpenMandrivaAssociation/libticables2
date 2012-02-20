@@ -35,7 +35,7 @@ This package contains the files necessary to develop applications using the
 %{name} library.
 
 %prep
-%setup
+%setup -q
 autoreconf -i -f
 
 %build
