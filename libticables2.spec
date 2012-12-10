@@ -82,3 +82,16 @@ EOF
 %{_libdir}/libticables2.so
 %{_libdir}/pkgconfig/ticables2.pc
 %{_datadir}/locale/fr/LC_MESSAGES/%{name}.mo
+
+
+%changelog
+* Mon Feb 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.3.3-1
++ Revision: 778066
+- setup is quiet
+
+* Mon Feb 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.3.3-1
++ Revision: 778061
+- %libname description fix
+- major version fix \n
+- imported package libticables2
+
