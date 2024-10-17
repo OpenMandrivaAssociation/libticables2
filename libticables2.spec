@@ -5,7 +5,7 @@
 Name: libticables2
 Version: 1.3.3
 Release: 3
-Url: http://sourceforge.net/projects/tilp
+Url: https://sourceforge.net/projects/tilp
 Source0: http://downloads.sourceforge.net/project/tilp/tilp2-linux/tilp2-1.16/%{name}-%{version}.tar.bz2
 Group: System/Libraries
 License: GPLv2+
